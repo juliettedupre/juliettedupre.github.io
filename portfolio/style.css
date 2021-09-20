@@ -1,24 +1,66 @@
-@media (min-width:360px){
-    .grille{
-        display: grid;
-        grid-auto-rows: ;
-        grid-auto-flow: row dense ;
-        justify-content: center;
-    }
+.grille{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-auto-rows: 200px;
+    grid-auto-flow: row dense ;
+    justify-content: center;
 }
 
 body{
-    background-color: #F6C6EA;
+    background-color: #F9F9F9;
+    color: #d99ef5;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+a:visited{
+    color: #d99ef5;
 }
 
 b{
-    background-color: #F6C6EA ;
+    background-color: #F9F9F9 ;
 }
 
-.propos{
-    background-color: #C490E4;
+.bigsquare{
+    grid-column: span2;
+    grid-row: span2;
+}
+
+.recth{
+    grid-column: span2;
+}
+
+.rectv{
+    grid-row: span2;
+}
+
+.propos, .conception{
+    background-color: #F9F9F9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
 } 
 
-.conception{
-    background-color: #C490E4;
+.portfolio{
+    background-color: #afeee3;
+    color:white;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.galerie{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 20px;
+}
+
+.carbonbadge{
+    margin-top: 30px;
 }
