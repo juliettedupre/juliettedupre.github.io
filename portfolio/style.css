@@ -1,0 +1,24 @@
+@media (min-width:360px){
+    .grille{
+        display: grid;
+        grid-auto-rows: ;
+        grid-auto-flow: row dense ;
+        justify-content: center;
+    }
+}
+
+body{
+    background-color: #F6C6EA;
+}
+
+b{
+    background-color: #F6C6EA ;
+}
+
+.propos{
+    background-color: #C490E4;
+} 
+
+.conception{
+    background-color: #C490E4;
+}
