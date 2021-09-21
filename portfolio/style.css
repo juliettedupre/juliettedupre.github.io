@@ -8,7 +8,7 @@
 
 body{
     background-color: #F9F9F9;
-    color: #d99ef5;
+    color: #9360f3;
     margin: 0%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
@@ -20,11 +20,23 @@ img{
 }
 
 a:visited{
-    color: #d99ef5;
+    color: #9360f3;
+}
+
+a:hover{
+    opacity: 50%;
+}
+
+a{
+    transition: 0.4s;
 }
 
 b{
     background-color: #F9F9F9 ;
+}
+
+h1, h2{
+    text-align: left;
 }
 
 .bigsquare{
@@ -40,10 +52,10 @@ b{
     grid-row: span2;
 }
 
-.propos, .conception{
+.propos, 
+.conception{
     background-color: #F9F9F9;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     padding-left: 20px;
     padding-right: 20px;
 } 
@@ -55,9 +67,40 @@ b{
     padding-right: 40px;
 }
 
+@media (min-width:700px){
+    .galerie{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 20px;
+    }
+    .propos, 
+    .conception{
+        background-color: #F9F9F9;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 20px;
+        padding-right: 20px;
+    } 
+}
+
+@media (400px <= width <= 700px){
+    .galerie{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 20px;
+    }
+    .propos, 
+    .conception{
+        background-color: #F9F9F9;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 20px;
+        padding-right: 20px;
+    } 
+}
+
 .galerie{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     padding-left: 20px;
 }
 
